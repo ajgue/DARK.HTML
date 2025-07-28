@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سكربتات دارك هوب</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #2b1055, #7597de);
+      overflow-x: hidden;
+      color: #fff;
+      direction: rtl;
+      position: relative;
+    }
+
+    canvas#bgCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      background-color: #6a11cb;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #2575fc;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .script-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      display: inline-block;
+      width: 280px;
+      color: #fff;
+    }
+
+    .script-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .script-card h3 {
+      color: #ffd700;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .script-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #fff;
+      background: #5f72ff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .script-card a:hover {
+      background: #2575fc;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      font-size: 2rem;
+      color: #fff;
+      background: #6a11cb;
+      padding: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .social-links a:hover {
+      background: #2575fc;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<canvas id="bgCanvas"></canvas>
+
+<header>
+  <h1>مرحبًا بكم في سكربتات دارك هوب</h1>
+  <nav>
+    <a href="#scripts">السكربتات</a>
+    <a href="#apps">التطبيقات</a>
+    <a href="#social">التواصل</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <section id="scripts">
+    <h2>السكربتات المميزة</h2>
+
+    <div class="script-card">
+      <h3>سكربت سكنات</h3>
+      <a href="https://raw.githubusercontent.com/ajgue/Ijiiiiii/refs/heads/main/%D8%B3%D9%83%D9%86%D8%A7%D8%AA.lua.txt" target="_blank">تشغيل السكربت</a>
+    </div>
+
+    <div class="script-card">
+      <h3>تحديث الأخير</h3>
+      <a href="https://raw.githubusercontent.com/ajgue/Iiiiiiiiid/refs/heads/main/%D8%AA%D8%AD%D8%AF%D9%8A%D8%AB%20%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1.lua.txt" target="_blank">تشغيل السكربت</a>
+    </div>
+
+    <div class="script-card">
+      <h3>سكربت وار تايكون</h3>
+      <a href="https://raw.githubusercontent.com/ajgue/Ijiiiiii/refs/heads/main/Protected_7429084370210180.lua.txt" target="_blank">تشغيل السكربت</a>
+    </div>
+
+    <div class="script-card">
+      <h3>نسخ سكنات</h3>
+      <a href="https://raw.githubusercontent.com/ajgue/Ijiiiiii/refs/heads/main/Copy.lua.txt" target="_blank">تشغيل السكربت</a>
+    </div>
+
+  </section>
+
+  <section id="apps">
+    <h2>التطبيقات</h2>
+
+    <div class="script-card">
+      <h3>تحميل دلتا</h3>
+      <a href="https://example.com/delta-download" target="_blank">تحميل</a>
+    </div>
+
+    <div class="script-card">
+      <h3>تحميل كرنل</h3>
+      <a href="https://example.com/kernel-download" target="_blank">تحميل</a>
+    </div>
+
+  </section>
+
+  <section id="social">
+    <h2>تابعنا على تيليجرام</h2>
+    <div class="social-links">
+      <a href="https://t.me/xkua_r" target="_blank"><i class="fab fa-telegram"></i></a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy;  سكربتات دارك هوب | جميع الحقوق محفوظة</p>
+</footer>
+
+
+<script>
+  const canvas = document.getElementById("bgCanvas");
+  const ctx = canvas.getContext("2d");
+  let w, h;
+  let particles = [];
+
+  function init() {
+    w = canvas.width = window.innerWidth;
+    h = canvas.height = window.innerHeight;
+    particles = [];
+    for (let i = 0; i < 150; i++) {
+      particles.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        r: Math.random() * 2,
+        d: Math.random() * 2
+      });
+    }
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, w, h);
+    ctx.fillStyle = "rgba(255,255,255,0.8)";
+    for (let i = 0; i < particles.length; i++) {
+      let p = particles[i];
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2, false);
+      ctx.fill();
+    }
+    update();
+  }
+
+  function update() {
+    for (let i = 0; i < particles.length; i++) {
+      let p = particles[i];
+      p.y += p.d;
+      if (p.y > h) {
+        particles[i] = { x: Math.random() * w, y: 0, r: p.r, d: p.d };
+      }
+    }
+  }
+
+  setInterval(draw, 33);
+  window.addEventListener("resize", init);
+  init();
+</script>
+
+</body>
+</html>
