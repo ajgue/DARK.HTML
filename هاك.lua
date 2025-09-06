@@ -771,4 +771,45 @@ local expansionModel
 local expansionSound
 local originalSky
 
+local playerNames = {}
+for _, player in pairs(Players:GetPlayers()) do
+    table.insert(playerNames, player.Name)
+end
+
+local selectedPlayerName = playerNames[1]
+
+local SettingsTab = MakeTab({
+    Name = "الاعدادات",
+    Image = "rbxassetid://",
+    TabTitle = true
+})
+
+local TransparencyOptions = {"0%", "10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%", "100%"}
+local TransparencyDropdown = AddDropdown(SettingsTab, {
+    Name = "شفافية القائمة",
+    Options = TransparencyOptions,
+    Default = "70%",
+    Callback = function(Value)
+        local transparencyValue = tonumber(Value:sub(1, -2)) / 100
+        Menu.BackgroundTransparency = transparencyValue
+    end
+})
+
+local BackgroundDropdown = AddDropdown(SettingsTab, {
+    Name = "اختر صورة للخلفية",
+    Options = {
+        "rbxassetid://125684503332368",
+        "rbxassetid://76701484809068",
+        "rbxassetid://119624603128664",
+        "rbxassetid://85240216290930",
+        "rbxassetid://101625082962838",
+        "rbxassetid://87552624814549",
+        "rbxassetid://93979996586254"
+    },
+    Default = "rbxassetid://125684503332368",
+    Callback = function(Value)
+        bg.Image = Value
+    end
+})
+
 
